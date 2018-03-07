@@ -84,21 +84,23 @@ block main
   // end section-papers
 
   section.section.section-markets
-    h2.section__title Markets
-    div.markets
-      div.market
-        img(src="", alt="").market__logo
-        h4.market__title Stocks.exchange
-        p.market__description Exchange market
-      div.market
-        img(src="", alt="").market__logo
-        h4.market__title BTC-Alpha
-        p.market__description Exchange market
+    div.section__wrap.container
+      h2.section__title Markets
+      div.markets
+        div.market
+          img(src=require('./images/stocks.png')).market__logo
+          h4.market__title Stocks.exchange
+          p.market__description Exchange market
+        div.market
+          img(src=require('./images/btc.png')).market__logo
+          h4.market__title BTC-Alpha
+          p.market__description Exchange market
   // end section-markets
 
   section.section.section-roadmap
-    h2.section__title Roadmap
-    div.test Roadmap shit will be here
+    div.section__wrap.container
+      h2.section__title Roadmap
+      div.test Roadmap shit will be here
   // end section-roadmap
 
   section.section.section-join-us
