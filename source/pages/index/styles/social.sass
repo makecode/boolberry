@@ -1,0 +1,27 @@
+.social
+  margin: 24px 0 50px
+  display: inline-flex
+  flex-direction: row
+  flex-wrap: nowrap
+
+  &__el
+    margin: 0 40px
+
+  &__link,
+  &__link:active,
+  &__link:focus,
+  &__link:visited
+    display: inline-block
+    color: $textDefault
+    opacity: .85
+    transition: $transition
+  
+    &:hover
+      opacity: 1
+      color: $textDefault
+
+  &__icon
+    display: flex
+    align-items: center
+    width: 60px
+    height: 60px

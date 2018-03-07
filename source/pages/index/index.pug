@@ -107,26 +107,31 @@ block main
       ul.social
         li.social__el
           a(href="#").social__link
-            span.social__icon
+            div.social__icon
+              img(src=require('./images/telegram.png'))
             span.social__title Telegram
         li.social__el
           a(href="#").social__link
-            span.social__icon.slack
+            div.social__icon
+              img(src=require('./images/slack.png'))
             span.social__title Slack
         li.social__el
           a(href="#").social__link
-            span.social__icon.twitter
+            div.social__icon
+              img(src=require('./images/twitter.png'))
             span.social__title Twitter
         li.social__el
           a(href="#").social__link
-            span.social__icon.reddit
+            div.social__icon
+              img(src=require('./images/reddit.png'))
             span.social__title Reddit
         li.social__el
           a(href="#").social__link
-            span.social__icon.youtube
+            div.social__icon
+              img(src=require('./images/youtube.png'))
             span.social__title Youtube
 
-      p.section__description Receive updates about Boolberry project:
+      p.subscribe-text Receive updates about Boolberry project:
       form.subscribe
         div.subscribe__field
           input.input(type="text" placeholder='Your e-mail')
