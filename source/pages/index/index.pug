@@ -1,0 +1,203 @@
+extends ../base
+block title
+  |boolberry
+block main
+  header.header
+    div.header__wrap.container
+      div.header__logo
+        div.logo
+          img.logo__image(src='./images/logo.svg')
+      h1.header__title Truly anonymous cryptocurrency
+      p.header__description Cryptocurrency is about the democratization of the financial sector, removing people’s dependence on third party institutions.
+      p.header__description BoolBerry is the natural next step in this journey, giving ua all the power to make truly anonymous financial transactions.
+      ul.btn-group
+        li.btn-group__el
+          a.btn(href="#") Video
+        li.btn-group__el
+          a.btn(href="#") Wallet
+        li.btn-group__el
+          a.btn(href="#") Github
+    // end header__wrap
+
+    nav.navigation
+      div.navigation__wrap.container
+        div.navigation__left
+          div.logo.logo_small
+            img.logo__image(src='./images/logo.svg')
+        div.navigation__right
+          ul.navigation__list
+            li.navigation__el
+              a.navigation__el(href='#') What is Boolberry?
+            li.navigation__el
+              a.navigation__el(href='#') Papers
+            li.navigation__el
+              a.navigation__el(href='#') Markets
+            li.navigation__el
+              a.navigation__el(href='#') Roadmap
+            li.navigation__el
+              a.navigation__el(href='#') Join Us
+            li.navigation__el
+              a.navigation__el(href='#') Contributors
+    // end navigation
+  // end header
+
+  section.section.section-what-is
+    h2.section__title What is Boolberry
+    p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to prove anonymity, transactions cannot be linked to a sigle sender.
+    div.figure-group
+      figure.figure
+        div.figure__icon
+          img.figure__img
+        figcaption.figure__text
+          dl
+            dt.figure__strong Solving blockchain bloat
+            dd.figure__regular It’s no longer necessary to drag anound hundreds of thousands of ring signatures to mantain security. Boolberry cuts blockchain length by a minimum of 50% and a maximum of 90% for faster, more efficient syncronisation.
+      
+      figure.figure
+        div.figure__icon
+          img.figure__img
+        figcaption.figure__text
+          dl
+            dt.figure__strong Defending against ASICs
+            dd.figure__regular Boolberry employs a proprietary algoritm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly democratized and safe from a 51% attack.
+      
+      figure.figure
+        div.figure__icon
+          img.figure__img
+        figcaption.figure__text
+          dl
+            dt.figure__strong Designing for real people
+            dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency. Building a user-friendly wallet application brings with it the possibility of widespread adoption outside the current community.
+  // end section-what-is
+
+  section.section.section-papers
+    h2.section__title Papers
+    p.section__description Learn more about our tech throught our papers
+    
+    ul.btn-group
+      li.btn-group__el
+        a.btn(href="#") Hashing algo paper
+      li.btn-group__el
+        a.btn(href="#") Blockchain Pruning
+      li.btn-group__el
+        a.btn(href="#") Specifications
+  // end section-papers
+
+  section.section.section-markets
+    h2.section__title Markets
+    div.markets
+      div.market
+        img(src="", alt="").market__logo
+        h4.market__title Stocks.exchange
+        p.market__description Exchange market
+      div.market
+        img(src="", alt="").market__logo
+        h4.market__title BTC-Alpha
+        p.market__description Exchange market
+  // end section-markets
+
+  section.section.section-roadmap
+    h2.section__title Roadmap
+    div.test Roadmap shit will be here
+  // end section-roadmap
+
+  section.section.section-join-us
+    div.section__wrap.container
+      h2.section__title Join us
+      ul.social
+        li.social__el
+          a(href="#").social__link
+            span.social__icon
+            span.social__title Telegram
+        li.social__el
+          a(href="#").social__link
+            span.social__icon.slack
+            span.social__title Slack
+        li.social__el
+          a(href="#").social__link
+            span.social__icon.twitter
+            span.social__title Twitter
+        li.social__el
+          a(href="#").social__link
+            span.social__icon.reddit
+            span.social__title Reddit
+        li.social__el
+          a(href="#").social__link
+            span.social__icon.youtube
+            span.social__title Youtube
+
+      p.section__description Receive updates about Boolberry project:
+      form.subscribe
+        div.subscribe__field
+          input.input(type="text" placeholder='Your e-mail')
+        div.subscribe__action
+          button(type='submit') Subscribe
+  // end section-join-us
+
+  section.section.section-contributors
+    div.section__wrap.container
+      h2.section__title Contributors
+
+      div.contributors
+        div.contributor
+          div.contributor__name @CryptoZoidberg
+          div.contributor__icons
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-github
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-reddit-alien
+        div.contributor
+          div.contributor__name @Clintar
+          div.contributor__icons
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-github
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-reddit-alien
+  // end section-contibutors
+
+  footer.footer
+    div.footer__wrap.container
+      div.footer__col
+        h3.footer__title Boolberry
+        ul.list
+          li.list__el
+            a(href="#").list__link What is Boolberry
+          li.list__el
+            a(href="#").list__link Papers
+          li.list__el
+            a(href="#").list__link Markets
+          li.list__el
+            a(href="#").list__link Roadmap
+          li.list__el
+            a(href="#").list__link Join Us
+          li.list__el
+            a(href="#").list__link Contributors
+
+      div.footer__col
+        h3.footer__title Contacts
+        ul.list
+          li.list__el
+            a(href="#").list__link Telegram
+          li.list__el
+            a(href="#").list__link Slack
+          li.list__el
+            a(href="#").list__link Twitter
+          li.list__el
+            a(href="#").list__link Reddit
+          li.list__el
+            a(href="mailto:info@boolberry.com").list__link.underline info@boolberry.com
+
+      div.footer__col
+        h3.footer__title Recources
+        ul.list
+          li.list__el
+            a(href="#").list__link Network
+          li.list__el
+            a(href="#").list__link Block explorer
+          li.list__el
+            a(href="#").list__link Github
+          li.list__el
+            a(href="#").list__link Github/Releases
+
+      div.copyright © 2018 Boolberry.com
+  // end footer

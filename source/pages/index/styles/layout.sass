@@ -1,0 +1,71 @@
+.container
+  padding: 20px
+  width: 1080px
+  margin: 0 auto
+  box-sizing: border-box
+  
+.header,
+.footer
+  background-image: url('images/bg.jpg')
+  background-size: cover
+  background-position: center bottom
+  color: $textLight
+
+.header
+  position: relative
+  padding: 140px 0 334px
+  text-align: center
+
+  &__logo
+    margin-bottom: 94px
+
+  &__title
+    margin: 30px 0
+
+  &__description
+    font-weight: regular
+
+  .btn-group
+    margin-top: 50px
+
+.section
+  padding: 110px 0 120px
+  background-repeat: repeat
+  text-align: center
+
+  &__title
+    font-size: 44px
+
+  &.section-papers,
+  &.section-contributors
+    background-image: url('images/bg_b.png')
+    color: $textLight
+
+  &.section-roadmap
+    background-image: url('images/bg_board.png')
+    color: $textLight
+
+.footer
+  display: flex
+  background-position: center top
+
+  &__wrap
+    margin: 55px auto 75px
+    display: flex
+    flex-direction: row
+    position: relative
+
+  &__col
+    margin-right: 96px
+
+    &:last-child
+      margin-right: 0
+  
+  &__title
+    margin-bottom: 18px
+    font-weight: 100
+
+  .copyright
+    position: absolute
+    right: 0
+    bottom: 0

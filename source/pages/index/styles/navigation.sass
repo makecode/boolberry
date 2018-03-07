@@ -1,0 +1,37 @@
+.navigation
+  position: absolute
+  left: 0
+  bottom: 0
+  width: 100%
+  display: flex
+  align-items: center
+  height: 70px
+  // background-image: url('images/bg.jpg')
+  background-size: cover
+  background-position: center bottom
+  transition: $transition
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: space-between
+
+  &__list
+    display: flex
+    flex-direction: row
+    font-size: 15px
+
+  &__el
+    margin-left: 35px
+
+    &:first-child
+      margin-left: 0
+
+.btn-group
+  display: inline-flex
+  flex-direction: row
+
+  &__el
+    margin: 0 6px
