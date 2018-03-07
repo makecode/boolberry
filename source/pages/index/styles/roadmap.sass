@@ -1,0 +1,52 @@
+.roadmap
+  margin: 50px 0
+  overflow: hidden
+
+.points
+  position: relative
+  margin: 0 auto
+  width: calc(100% - 160px)
+
+  &__center
+    display: flex
+    justify-content: space-between
+
+.point
+  position: relative
+  display: inline-block
+  width: 24px
+  height: 24px
+  border: 3px solid $pointBorderColor
+  border-radius: 50%
+  background-color: #076ad0
+  z-index: 2
+
+  &.active
+    z-index: 1
+
+    &::before,
+    &::after
+      position: absolute
+      content: ''
+      width: 100vw
+      height: 0
+      top: 50%
+      transform: translateY(-50%)
+
+    &::before
+      left: calc(-100% + 40px)
+      border-bottom: 4px dotted #fff
+
+    &::after
+      right: calc(-100% + 38px)
+      border-bottom: 3px solid $pointBorderColor
+
+  &__circle
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #fff

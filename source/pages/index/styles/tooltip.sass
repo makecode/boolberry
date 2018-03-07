@@ -1,0 +1,48 @@
+.tooltip
+  padding: 16px
+  margin: 10px
+  position: relative
+  display: inline-block
+  width: 228px
+  background: url('images/bg_tooltip.svg') $bgBlue center
+  background-size: cover
+  box-sizing: border-box
+
+  &::after,
+  &::before
+    position: absolute
+    content: ''
+    left: 50%
+    width: 0;
+    height: 0;
+    transform: translateX(-50%)
+    border-style: solid
+    // border-color: transparent transparent transparent transparent
+
+  &.top
+    box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.1)
+
+    &::after,
+    &::before
+      bottom: -10px
+      border-width: 10px 10px 0 10px
+      border-color: #209bff transparent transparent transparent
+
+    &::before
+      bottom: -18px
+      border-color: rgba(0,0,0,0.1) transparent transparent transparent
+
+  
+
+  &.bottom
+    box-shadow: 0px -8px 0px 0px rgba(0,0,0,0.1)
+
+    &::after,
+    &::before
+      top: -10px
+      border-width: 0 10px 10px 10px
+      border-color: transparent transparent #44abff transparent
+
+    &::before
+      top: -18px
+      border-color: transparent transparent rgba(0,0,0,0.1) transparent

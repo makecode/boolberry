@@ -42,45 +42,47 @@ block main
   // end header
 
   section.section.section-what-is
-    h2.section__title What is Boolberry
-    p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to prove anonymity, transactions cannot be linked to a sigle sender.
-    div.figure-group
-      figure.figure
-        div.figure__icon
-          img.figure__img
-        figcaption.figure__text
-          dl
-            dt.figure__strong Solving blockchain bloat
-            dd.figure__regular It’s no longer necessary to drag anound hundreds of thousands of ring signatures to mantain security. Boolberry cuts blockchain length by a minimum of 50% and a maximum of 90% for faster, more efficient syncronisation.
-      
-      figure.figure
-        div.figure__icon
-          img.figure__img
-        figcaption.figure__text
-          dl
-            dt.figure__strong Defending against ASICs
-            dd.figure__regular Boolberry employs a proprietary algoritm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly democratized and safe from a 51% attack.
-      
-      figure.figure
-        div.figure__icon
-          img.figure__img
-        figcaption.figure__text
-          dl
-            dt.figure__strong Designing for real people
-            dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency. Building a user-friendly wallet application brings with it the possibility of widespread adoption outside the current community.
+    div.section__wrap.container
+      h2.section__title What is Boolberry
+      p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to prove anonymity, transactions cannot be linked to a sigle sender.
+      div.figure-group
+        figure.figure
+          div.figure__icon
+            img(src=require('./images/fig_blockchain.svg')).figure__img
+          figcaption.figure__text
+            dl
+              dt.figure__strong Solving blockchain bloat
+              dd.figure__regular It’s no longer necessary to drag anound hundreds of thousands of ring signatures to mantain security. Boolberry cuts blockchain length by a minimum of 50% and a maximum of 90% for faster, more efficient syncronisation.
+        
+        figure.figure
+          div.figure__icon
+            img(src=require('./images/fig_defending.svg')).figure__img
+          figcaption.figure__text
+            dl
+              dt.figure__strong Defending against ASICs
+              dd.figure__regular Boolberry employs a proprietary algoritm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly democratized and safe from a 51% attack.
+        
+        figure.figure
+          div.figure__icon
+            img(src=require('./images/fig_wallet.svg')).figure__img
+          figcaption.figure__text
+            dl
+              dt.figure__strong Designing for real people
+              dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency. Building a user-friendly wallet application brings with it the possibility of widespread adoption outside the current community.
   // end section-what-is
 
   section.section.section-papers
-    h2.section__title Papers
-    p.section__description Learn more about our tech throught our papers
-    
-    ul.btn-group
-      li.btn-group__el
-        a.btn(href="#") Hashing algo paper
-      li.btn-group__el
-        a.btn(href="#") Blockchain Pruning
-      li.btn-group__el
-        a.btn(href="#") Specifications
+    div.section__wrap.container
+      h2.section__title Papers
+      p.section__description Learn more about our tech throught our papers
+      
+      ul.btn-group
+        li.btn-group__el
+          a.btn(href="#") Hashing algo paper
+        li.btn-group__el
+          a.btn(href="#") Blockchain Pruning
+        li.btn-group__el
+          a.btn(href="#") Specifications
   // end section-papers
 
   section.section.section-markets
@@ -101,6 +103,28 @@ block main
     div.section__wrap.container
       h2.section__title Roadmap
       div.test Roadmap shit will be here
+
+      div.roadmap
+        div.points
+          div.points__top
+          div.points__center
+            span.point
+              span.point__circle
+            span.point.active
+              span.point__circle
+            span.point
+              span.point__circle
+            span.point
+              span.point__circle
+            span.point
+              span.point__circle
+            span.point
+              span.point__circle
+          div.points__bottom
+      //- div.tooltip.top Lorem ipsum dolor sit
+      //- div.tooltip.top Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      //- div.tooltip.bottom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus praesentium quae a, numquam possimus officia quo ut dolor laborum ratione animi non reprehenderit tempora soluta libero cum doloremque perspiciatis?
+      //- div.tooltip.bottom Lorem ipsum dolor sit
   // end section-roadmap
 
   section.section.section-join-us
