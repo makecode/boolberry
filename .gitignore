@@ -1,7 +1,8 @@
 #directories
 .idea
 node_modules
-build
 
 #npm
 package-lock.json
+
+.DS_Store
