@@ -12,7 +12,7 @@
     <header class="header">
       <div class="header__wrap container">
         <div class="header__logo">
-          <div class="logo"><img class="logo__image" src="./images/logo.svg"></div>
+          <div class="logo"><a class="logo__link" href="http://boolberry.com/"><img class="logo__image" src="./images/logo.svg"></a></div>
         </div>
         <h1 class="header__title">Truly anonymous cryptocurrency</h1>
         <p class="header__description">Cryptocurrency is about the democratization of the financial sector, removing people’s dependence on third party institutions.</p>
@@ -24,10 +24,10 @@
         </ul>
       </div>
       <!-- end header__wrap-->
-      <nav class="navigation">
+      <nav class="navigation" id="navigation">
         <div class="navigation__wrap container">
           <div class="navigation__left">
-            <div class="logo logo_small"><img class="logo__image" src="./images/logo.svg"></div>
+            <div class="logo logo_small"><a class="logo__link" href="http://boolberry.com/"><img class="logo__image" src="./images/logo.svg"></a></div>
           </div>
           <div class="navigation__right">
             <ul class="navigation__list">
@@ -96,10 +96,6 @@
       <div class="section__wrap container">
         <h2 class="section__title">Markets</h2>
         <div class="markets">
-          <div class="market"><img class="market__logo" src="images/stocks.png">
-            <h4 class="market__title">Stocks.exchange</h4>
-            <p class="market__description">Exchange market</p>
-          </div>
           <div class="market"><img class="market__logo" src="images/btc.png">
             <h4 class="market__title">BTC-Alpha</h4>
             <p class="market__description">Exchange market</p>
@@ -111,12 +107,88 @@
     <section class="section section-roadmap">
       <div class="section__wrap container">
         <h2 class="section__title">Roadmap</h2>
-        <div class="test">Roadmap shit will be here</div>
         <div class="roadmap">
           <div class="points">
-            <div class="points__top"></div>
-            <div class="points__center"><span class="point"><span class="point__circle"></span></span><span class="point active"><span class="point__circle"></span></span><span class="point"><span class="point__circle"></span></span><span class="point"><span class="point__circle"></span></span><span class="point"><span class="point__circle"></span></span><span class="point"><span class="point__circle"></span></span></div>
-            <div class="points__bottom"></div>
+            <div class="point bottom"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">March 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip bottom">
+                  <ul class="list list_marked">
+                    <li class="list__el">Offline Sigs</li>
+                    <li class="list__el">Main Website</li>
+                    <li class="list__el">Team/Contributors</li>
+                    <li class="list__el">Finalize Research/Peer Review for Whhitepaper</li>
+                    <li class="list__el">Marketing Plan</li>
+                    <li class="list__el">Exchange Applications</li>
+                    <li class="list__el">BBIP System</li>
+                    <li class="list__el">Forum Fundraising System</li>
+                    <li class="list__el">Minor Bug Fixes / Cross Platform Compatibility </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="point top active"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">April 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip top">
+                  <ul class="list list_marked">
+                    <li class="list__el">Block Explorer</li>
+                    <li class="list__el">Network Health / Stats</li>
+                    <li class="list__el">LMDB Testing</li>
+                    <li class="list__el">PR Campaign</li>
+                    <li class="list__el">Instructional Videos Production</li>
+                    <li class="list__el">As Spend</li>
+                    <li class="list__elExchange">Implementations</li>
+                    <li class="list__el">Bounty Programs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="point bottom"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">May 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip bottom">
+                  <ul class="list list_marked">
+                    <li class="list__el">LMDB Implementation</li>
+                    <li class="list__el">Branded Mining Pool</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="point top"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">June 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip top">
+                  <ul class="list list_marked">
+                    <li class="list__el">Wallet GUI Implementation</li>
+                    <li class="list__el">Remote Nodes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="point bottom"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">July 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip bottom">
+                  <ul class="list list_marked">
+                    <li class="list__el">Wallet GUI Features</li>
+                    <li class="list__el">Wallet Seeds</li>
+                    <li class="list__el">Mining Integration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="point top"><span class="point__circle"><span class="point__center"></span></span>
+              <div class="point__title">August 2018</div>
+              <div class="point__tooltip">
+                <div class="tooltip top">
+                  <ul class="list list_marked">
+                    <li class="list__el">Dark Wallet</li>
+                    <li class="list__el">TBA</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -126,7 +198,7 @@
       <div class="section__wrap container">
         <h2 class="section__title">Join us</h2>
         <ul class="social">
-          <li class="social__el"><a class="social__link" href="#">
+          <li class="social__el"><a class="social__link" href="https://t.me/boolberry_bbr">
               <div class="social__icon"><img src="images/telegram.png"></div><span class="social__title">Telegram</span></a></li>
           <li class="social__el"><a class="social__link" href="#">
               <div class="social__icon"><img src="images/slack.png"></div><span class="social__title">Slack</span></a></li>
@@ -155,11 +227,11 @@
         <div class="contributors">
           <div class="contributor">
             <div class="contributor__name">@CryptoZoidberg</div>
-            <div class="contributor__icons"><a class="contributor__link" href="#"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
+            <div class="contributor__icons"><a class="contributor__link" href="https://github.com/cryptozoidberg"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
           </div>
           <div class="contributor">
             <div class="contributor__name">@Clintar</div>
-            <div class="contributor__icons"><a class="contributor__link" href="#"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
+            <div class="contributor__icons"><a class="contributor__link" href="https://github.com/clintar"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
           </div>
         </div>
       </div>

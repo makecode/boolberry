@@ -6,7 +6,6 @@
   display: flex
   align-items: center
   height: 70px
-  // background-image: url('images/bg.jpg')
   background-size: cover
   background-position: center bottom
   transition: $transition
@@ -28,6 +27,14 @@
 
     &:first-child
       margin-left: 0
+
+  &.is-fixed
+    position: fixed
+    top: 0
+    left: 0
+    bottom: auto
+    background-image: url('images/bg.jpg')  
+    z-index: 10
 
 .btn-group
   display: inline-flex

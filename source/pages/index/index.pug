@@ -6,7 +6,8 @@ block main
     div.header__wrap.container
       div.header__logo
         div.logo
-          img.logo__image(src='./images/logo.svg')
+          a(href="http://boolberry.com/").logo__link
+            img.logo__image(src='./images/logo.svg')
       h1.header__title Truly anonymous cryptocurrency
       p.header__description Cryptocurrency is about the democratization of the financial sector, removing people’s dependence on third party institutions.
       p.header__description BoolBerry is the natural next step in this journey, giving ua all the power to make truly anonymous financial transactions.
@@ -19,11 +20,12 @@ block main
           a.btn(href="#") Github
     // end header__wrap
 
-    nav.navigation
+    nav.navigation#navigation
       div.navigation__wrap.container
         div.navigation__left
           div.logo.logo_small
-            img.logo__image(src='./images/logo.svg')
+            a(href="http://boolberry.com/").logo__link
+              img.logo__image(src='./images/logo.svg')
         div.navigation__right
           ul.navigation__list
             li.navigation__el
@@ -182,7 +184,7 @@ block main
       h2.section__title Join us
       ul.social
         li.social__el
-          a(href="#").social__link
+          a(href="https://t.me/boolberry_bbr").social__link
             div.social__icon
               img(src=require('./images/telegram.png'))
             span.social__title Telegram
@@ -223,14 +225,14 @@ block main
         div.contributor
           div.contributor__name @CryptoZoidberg
           div.contributor__icons
-            a(href="#").contributor__link
+            a(href="https://github.com/cryptozoidberg").contributor__link
               span.contributor__icon.fab.fa-github
             a(href="#").contributor__link
               span.contributor__icon.fab.fa-reddit-alien
         div.contributor
           div.contributor__name @Clintar
           div.contributor__icons
-            a(href="#").contributor__link
+            a(href="https://github.com/clintar").contributor__link
               span.contributor__icon.fab.fa-github
             a(href="#").contributor__link
               span.contributor__icon.fab.fa-reddit-alien
