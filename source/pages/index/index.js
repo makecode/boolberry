@@ -4,11 +4,8 @@ import 'ress';
 // import images
 import './images/logo.svg';
 import './images/bg_tooltip.svg';
-import './images/play.png';
 
 $( document ).ready(function() {
-  console.log( "ready!" );
-
   const nav = document.getElementById('navigation');
   const nav2 = document.getElementById('navigation-two');
   const navClass = 'navigation';
