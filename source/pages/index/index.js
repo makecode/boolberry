@@ -4,6 +4,7 @@ import 'ress';
 // import images
 import './images/logo.svg';
 import './images/bg_tooltip.svg';
+import './images/play.png';
 
 const nav = document.getElementById('navigation');
 const navClass = 'navigation';

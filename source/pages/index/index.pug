@@ -13,7 +13,9 @@ block main
       p.header__description BoolBerry is the natural next step in this journey, giving ua all the power to make truly anonymous financial transactions.
       ul.btn-group
         li.btn-group__el
-          a.btn(href="#") Video
+          a.btn(href="#")
+            span.icon.icon-play
+            span Video
         li.btn-group__el
           a.btn(href="#") Wallet
         li.btn-group__el
@@ -184,15 +186,20 @@ block main
       h2.section__title Join us
       ul.social
         li.social__el
-          a(href="https://t.me/boolberry_bbr").social__link
+          a(href="https://bitcointalk.org/index.php?topic=577267").social__link
             div.social__icon
-              img(src=require('./images/telegram.png'))
-            span.social__title Telegram
+              img(src=require('./images/bitcointalk.svg'))
+            span.social__title Bitcointalk
         li.social__el
           a(href="#").social__link
             div.social__icon
               img(src=require('./images/slack.png'))
             span.social__title Slack
+        li.social__el
+          a(href="https://t.me/boolberry_bbr").social__link
+            div.social__icon
+              img(src=require('./images/telegram.png'))
+            span.social__title Telegram
         li.social__el
           a(href="#").social__link
             div.social__icon
@@ -203,11 +210,11 @@ block main
             div.social__icon
               img(src=require('./images/reddit.png'))
             span.social__title Reddit
-        li.social__el
-          a(href="#").social__link
-            div.social__icon
-              img(src=require('./images/youtube.png'))
-            span.social__title Youtube
+        //- li.social__el
+        //-   a(href="#").social__link
+        //-     div.social__icon
+        //-       img(src=require('./images/youtube.png'))
+        //-     span.social__title Youtube
 
       p.subscribe-text Receive updates about Boolberry project:
       form.subscribe
