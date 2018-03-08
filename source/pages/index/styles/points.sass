@@ -1,0 +1,81 @@
+.points
+  width: calc(100% + 160px)
+  margin: 220px 0 235px -80px
+  display: flex
+  justify-content: space-between
+
+.point
+  position: relative
+  width: 16.6%
+  line-height: 0
+
+  &__circle
+    position: relative
+    display: inline-block
+    width: 24px
+    height: 24px
+    border: 3px solid $pointBorderColor
+    border-radius: 50%
+    background-color: #076ad0
+    z-index: 2
+
+  &__center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background-color: #fff
+
+  &__title,
+  &__tooltip
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    line-height: 1
+
+  &__title
+    white-space: nowrap
+
+  &.active
+
+    .point
+      &__circle
+        z-index: 1
+
+        &::before,
+        &::after
+          position: absolute
+          content: ''
+          width: 100vw
+          height: 0
+          top: 50%
+          transform: translateY(-50%)
+
+        &::before
+          left: calc(-100% + 40px)
+          border-bottom: 4px dotted #fff
+
+        &::after
+          right: calc(-100% + 38px)
+          border-bottom: 3px solid $pointBorderColor
+
+  &.top
+    .point
+      &__title
+        bottom: -32px
+
+      &__tooltip
+        transform: translate(-50%, -100%)
+        top: -24px
+
+  &.bottom
+    .point
+      &__title
+        top: -32px
+
+      &__tooltip
+        transform: translate(-50%, 100%)
+        bottom: -24px

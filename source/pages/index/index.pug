@@ -90,10 +90,6 @@ block main
       h2.section__title Markets
       div.markets
         div.market
-          img(src=require('./images/stocks.png')).market__logo
-          h4.market__title Stocks.exchange
-          p.market__description Exchange market
-        div.market
           img(src=require('./images/btc.png')).market__logo
           h4.market__title BTC-Alpha
           p.market__description Exchange market
@@ -102,29 +98,83 @@ block main
   section.section.section-roadmap
     div.section__wrap.container
       h2.section__title Roadmap
-      div.test Roadmap shit will be here
 
       div.roadmap
         div.points
-          div.points__top
-          div.points__center
-            span.point
-              span.point__circle
-            span.point.active
-              span.point__circle
-            span.point
-              span.point__circle
-            span.point
-              span.point__circle
-            span.point
-              span.point__circle
-            span.point
-              span.point__circle
-          div.points__bottom
-      //- div.tooltip.top Lorem ipsum dolor sit
-      //- div.tooltip.top Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-      //- div.tooltip.bottom Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus praesentium quae a, numquam possimus officia quo ut dolor laborum ratione animi non reprehenderit tempora soluta libero cum doloremque perspiciatis?
-      //- div.tooltip.bottom Lorem ipsum dolor sit
+          div.point.bottom
+            span.point__circle
+              span.point__center
+            div.point__title
+              |March 2018
+            div.point__tooltip
+              div.tooltip.bottom
+                ul.list.list_marked
+                  li.list__el Offline Sigs
+                  li.list__el Main Website
+                  li.list__el Team/Contributors
+                  li.list__el Finalize Research/Peer Review for Whhitepaper
+                  li.list__el Marketing Plan
+                  li.list__el Exchange Applications
+                  li.list__el BBIP System
+                  li.list__el Forum Fundraising System
+                  li.list__el Minor Bug Fixes / Cross Platform Compatibility 
+
+          div.point.top.active
+            span.point__circle
+              span.point__center
+            div.point__title April 2018
+            div.point__tooltip
+              div.tooltip.top
+                ul.list.list_marked
+                  li.list__el Block Explorer
+                  li.list__el Network Health / Stats
+                  li.list__el LMDB Testing
+                  li.list__el PR Campaign
+                  li.list__el Instructional Videos Production
+                  li.list__el As Spend
+                  li.list__elExchange Implementations
+                  li.list__el Bounty Programs
+            
+          div.point.bottom
+            span.point__circle
+              span.point__center
+            div.point__title May 2018
+            div.point__tooltip
+              div.tooltip.bottom
+                ul.list.list_marked
+                  li.list__el LMDB Implementation
+                  li.list__el Branded Mining Pool
+          
+          div.point.top
+            span.point__circle
+              span.point__center
+            div.point__title June 2018
+            div.point__tooltip
+              div.tooltip.top
+                ul.list.list_marked
+                  li.list__el Wallet GUI Implementation
+                  li.list__el Remote Nodes
+
+          div.point.bottom
+            span.point__circle
+              span.point__center
+            div.point__title July 2018
+            div.point__tooltip
+              div.tooltip.bottom
+                ul.list.list_marked
+                  li.list__el Wallet GUI Features
+                  li.list__el Wallet Seeds
+                  li.list__el Mining Integration
+
+          div.point.top
+            span.point__circle
+              span.point__center
+            div.point__title August 2018
+            div.point__tooltip
+              div.tooltip.top
+                ul.list.list_marked
+                  li.list__el Dark Wallet
+                  li.list__el TBA
   // end section-roadmap
 
   section.section.section-join-us
