@@ -5,6 +5,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <base target="_blank">
     <title>boolberry
     </title>
   <link href="./css/index.css" rel="stylesheet"></head>
@@ -12,7 +13,7 @@
     <header class="header">
       <div class="header__wrap container">
         <div class="header__logo">
-          <div class="logo"><a class="logo__link" href="http://boolberry.com/"><img class="logo__image" src="./images/logo.svg"></a></div>
+          <div class="logo"><a class="logo__link" href="http://boolberry.com/" target="_self"><img class="logo__image" src="./images/logo.svg"></a></div>
         </div>
         <h1 class="header__title">Truly anonymous cryptocurrency</h1>
         <p class="header__description">Cryptocurrency is about the democratization of the financial sector, removing people’s dependence on third party institutions.</p>
@@ -27,16 +28,16 @@
       <nav class="navigation" id="navigation">
         <div class="navigation__wrap container">
           <div class="navigation__left">
-            <div class="logo logo_small"><a class="logo__link" href="http://boolberry.com/"><img class="logo__image" src="./images/logo.svg"></a></div>
+            <div class="logo logo_small"><a class="logo__link" href="http://boolberry.com/" target="_self"><img class="logo__image" src="./images/logo.svg"></a></div>
           </div>
           <div class="navigation__right">
             <ul class="navigation__list">
-              <li class="navigation__el"><a class="navigation__el" href="#">What is Boolberry?</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#">Papers</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#">Markets</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#">Roadmap</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#">Join Us</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#">Contributors</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#what-is" target="_self">What is Boolberry?</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#papers" target="_self">Papers</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#markets" target="_self">Markets</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#roadmap" target="_self">Roadmap</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#join-us" target="_self">Join Us</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#contributors" target="_self">Contributors</a></li>
             </ul>
           </div>
         </div>
@@ -44,7 +45,7 @@
       <!-- end navigation-->
     </header>
     <!-- end header-->
-    <section class="section section-what-is">
+    <section class="section section-what-is" id="what-is">
       <div class="section__wrap container">
         <h2 class="section__title">What is Boolberry</h2>
         <p class="section__description">BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to prove anonymity, transactions cannot be linked to a sigle sender.</p>
@@ -80,7 +81,7 @@
       </div>
     </section>
     <!-- end section-what-is-->
-    <section class="section section-papers">
+    <section class="section section-papers" id="papers">
       <div class="section__wrap container">
         <h2 class="section__title">Papers</h2>
         <p class="section__description">Learn more about our tech throught our papers</p>
@@ -92,7 +93,7 @@
       </div>
     </section>
     <!-- end section-papers-->
-    <section class="section section-markets">
+    <section class="section section-markets" id="markets">
       <div class="section__wrap container">
         <h2 class="section__title">Markets</h2>
         <div class="markets">
@@ -104,7 +105,7 @@
       </div>
     </section>
     <!-- end section-markets-->
-    <section class="section section-roadmap">
+    <section class="section section-roadmap" id="roadmap">
       <div class="section__wrap container">
         <h2 class="section__title">Roadmap</h2>
         <div class="roadmap">
@@ -194,7 +195,7 @@
       </div>
     </section>
     <!-- end section-roadmap-->
-    <section class="section section-join-us">
+    <section class="section section-join-us" id="join-us">
       <div class="section__wrap container">
         <h2 class="section__title">Join us</h2>
         <ul class="social">
@@ -221,7 +222,7 @@
       </div>
     </section>
     <!-- end section-join-us-->
-    <section class="section section-contributors">
+    <section class="section section-contributors" id="contributors">
       <div class="section__wrap container">
         <h2 class="section__title">Contributors</h2>
         <div class="contributors">
@@ -233,6 +234,18 @@
             <div class="contributor__name">@Clintar</div>
             <div class="contributor__icons"><a class="contributor__link" href="https://github.com/clintar"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
           </div>
+          <div class="contributor">
+            <div class="contributor__name">@John</div>
+            <div class="contributor__icons"><a class="contributor__link" href="#"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
+          </div>
+          <div class="contributor">
+            <div class="contributor__name">@Ravaga</div>
+            <div class="contributor__icons"><a class="contributor__link" href="#"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
+          </div>
+          <div class="contributor">
+            <div class="contributor__name">@Bitcrea</div>
+            <div class="contributor__icons"><a class="contributor__link" href="#"><span class="contributor__icon fab fa-github"></span></a><a class="contributor__link" href="#"><span class="contributor__icon fab fa-reddit-alien"></span></a></div>
+          </div>
         </div>
       </div>
     </section>
@@ -242,19 +255,20 @@
         <div class="footer__col">
           <h3 class="footer__title">Boolberry</h3>
           <ul class="list">
-            <li class="list__el"><a class="list__link" href="#">What is Boolberry</a></li>
-            <li class="list__el"><a class="list__link" href="#">Papers</a></li>
-            <li class="list__el"><a class="list__link" href="#">Markets</a></li>
-            <li class="list__el"><a class="list__link" href="#">Roadmap</a></li>
-            <li class="list__el"><a class="list__link" href="#">Join Us</a></li>
-            <li class="list__el"><a class="list__link" href="#">Contributors</a></li>
+            <li class="list__el"><a class="list__link" href="#what-is" target="_self">What is Boolberry</a></li>
+            <li class="list__el"><a class="list__link" href="#papers" target="_self">Papers</a></li>
+            <li class="list__el"><a class="list__link" href="#markets" target="_self">Markets</a></li>
+            <li class="list__el"><a class="list__link" href="#roadmap" target="_self">Roadmap</a></li>
+            <li class="list__el"><a class="list__link" href="#join-us" target="_self">Join Us</a></li>
+            <li class="list__el"><a class="list__link" href="#contributors" target="_self">Contributors</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h3 class="footer__title">Contacts</h3>
           <ul class="list">
-            <li class="list__el"><a class="list__link" href="#">Telegram</a></li>
+            <li class="list__el"><a class="list__link" href="https://bitcointalk.org/index.php?topic=577267">Bitcointalk</a></li>
             <li class="list__el"><a class="list__link" href="#">Slack</a></li>
+            <li class="list__el"><a class="list__link" href="https://t.me/boolberry_bbr">Telegram</a></li>
             <li class="list__el"><a class="list__link" href="#">Twitter</a></li>
             <li class="list__el"><a class="list__link" href="#">Reddit</a></li>
             <li class="list__el"><a class="list__link underline" href="mailto:info@boolberry.com">info@boolberry.com</a></li>

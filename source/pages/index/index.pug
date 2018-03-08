@@ -6,7 +6,7 @@ block main
     div.header__wrap.container
       div.header__logo
         div.logo
-          a(href="http://boolberry.com/").logo__link
+          a(href="http://boolberry.com/" target='_self').logo__link
             img.logo__image(src='./images/logo.svg')
       h1.header__title Truly anonymous cryptocurrency
       p.header__description Cryptocurrency is about the democratization of the financial sector, removing people’s dependence on third party institutions.
@@ -26,26 +26,26 @@ block main
       div.navigation__wrap.container
         div.navigation__left
           div.logo.logo_small
-            a(href="http://boolberry.com/").logo__link
+            a(href="http://boolberry.com/" target='_self').logo__link
               img.logo__image(src='./images/logo.svg')
         div.navigation__right
           ul.navigation__list
             li.navigation__el
-              a.navigation__el(href='#') What is Boolberry?
+              a.navigation__el(href='#what-is' target='_self') What is Boolberry?
             li.navigation__el
-              a.navigation__el(href='#') Papers
+              a.navigation__el(href='#papers' target='_self') Papers
             li.navigation__el
-              a.navigation__el(href='#') Markets
+              a.navigation__el(href='#markets' target='_self') Markets
             li.navigation__el
-              a.navigation__el(href='#') Roadmap
+              a.navigation__el(href='#roadmap' target='_self') Roadmap
             li.navigation__el
-              a.navigation__el(href='#') Join Us
+              a.navigation__el(href='#join-us' target='_self') Join Us
             li.navigation__el
-              a.navigation__el(href='#') Contributors
+              a.navigation__el(href='#contributors' target='_self') Contributors
     // end navigation
   // end header
 
-  section.section.section-what-is
+  section.section.section-what-is#what-is
     div.section__wrap.container
       h2.section__title What is Boolberry
       p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to prove anonymity, transactions cannot be linked to a sigle sender.
@@ -75,7 +75,7 @@ block main
               dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency. Building a user-friendly wallet application brings with it the possibility of widespread adoption outside the current community.
   // end section-what-is
 
-  section.section.section-papers
+  section.section.section-papers#papers
     div.section__wrap.container
       h2.section__title Papers
       p.section__description Learn more about our tech throught our papers
@@ -89,7 +89,7 @@ block main
           a.btn(href="#") Specifications
   // end section-papers
 
-  section.section.section-markets
+  section.section.section-markets#markets
     div.section__wrap.container
       h2.section__title Markets
       div.markets
@@ -99,7 +99,7 @@ block main
           p.market__description Exchange market
   // end section-markets
 
-  section.section.section-roadmap
+  section.section.section-roadmap#roadmap
     div.section__wrap.container
       h2.section__title Roadmap
 
@@ -181,7 +181,7 @@ block main
                   li.list__el TBA
   // end section-roadmap
 
-  section.section.section-join-us
+  section.section.section-join-us#join-us
     div.section__wrap.container
       h2.section__title Join us
       ul.social
@@ -224,7 +224,7 @@ block main
           button(type='submit') Subscribe
   // end section-join-us
 
-  section.section.section-contributors
+  section.section.section-contributors#contributors
     div.section__wrap.container
       h2.section__title Contributors
 
@@ -243,6 +243,30 @@ block main
               span.contributor__icon.fab.fa-github
             a(href="#").contributor__link
               span.contributor__icon.fab.fa-reddit-alien
+
+        div.contributor
+          div.contributor__name @John
+          div.contributor__icons
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-github
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-reddit-alien
+
+        div.contributor
+          div.contributor__name @Ravaga
+          div.contributor__icons
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-github
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-reddit-alien
+
+        div.contributor
+          div.contributor__name @Bitcrea
+          div.contributor__icons
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-github
+            a(href="#").contributor__link
+              span.contributor__icon.fab.fa-reddit-alien
   // end section-contibutors
 
   footer.footer
@@ -251,25 +275,27 @@ block main
         h3.footer__title Boolberry
         ul.list
           li.list__el
-            a(href="#").list__link What is Boolberry
+            a(href="#what-is" target='_self').list__link What is Boolberry
           li.list__el
-            a(href="#").list__link Papers
+            a(href="#papers" target='_self').list__link Papers
           li.list__el
-            a(href="#").list__link Markets
+            a(href="#markets" target='_self').list__link Markets
           li.list__el
-            a(href="#").list__link Roadmap
+            a(href="#roadmap" target='_self').list__link Roadmap
           li.list__el
-            a(href="#").list__link Join Us
+            a(href="#join-us" target='_self').list__link Join Us
           li.list__el
-            a(href="#").list__link Contributors
+            a(href="#contributors" target='_self').list__link Contributors
 
       div.footer__col
         h3.footer__title Contacts
         ul.list
           li.list__el
-            a(href="#").list__link Telegram
+            a(href="https://bitcointalk.org/index.php?topic=577267").list__link Bitcointalk
           li.list__el
             a(href="#").list__link Slack
+          li.list__el
+            a(href="https://t.me/boolberry_bbr").list__link Telegram
           li.list__el
             a(href="#").list__link Twitter
           li.list__el
