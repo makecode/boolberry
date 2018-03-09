@@ -17,9 +17,9 @@ block main
             span.icon.icon-play
             span Video
         li.btn-group__el
-          a.btn(href="#") Wallet
+          a.btn(href="http://boolberry.com/downloads.html") Wallet
         li.btn-group__el
-          a.btn(href="#") Github
+          a.btn(href="https://github.com/cryptozoidberg/boolberry") Github
     // end header__wrap
 
     nav.navigation#navigation
@@ -84,9 +84,9 @@ block main
         li.btn-group__el
           a.btn(href="#") Hashing algo paper
         li.btn-group__el
-          a.btn(href="#") Blockchain Pruning
+          a.btn(href="http://boolberry.org/files/Boolberry_Reduces_Blockchain_Bloat.pdf") Blockchain Pruning
         li.btn-group__el
-          a.btn(href="#") Specifications
+          a.btn(href="http://boolberry.org/index.html#specification") Specifications
   // end section-papers
 
   section.section.section-markets#markets
@@ -94,13 +94,15 @@ block main
       h2.section__title Markets
       div.markets
         div.market
-          img(src=require('./images/btc.png')).market__logo
-          h4.market__title BTC-Alpha
-          p.market__description Exchange market
+          a(href="https://btc-alpha.com/exchange/BBR_BTC/").market__link
+            img(src=require('./images/btc.png')).market__logo
+            h4.market__title BTC-Alpha
+            p.market__description Exchange market
         div.market
-          img(src=require('./images/kucoin.png')).market__logo
-          h4.market__title KuCoin
-          p.market__description Exchange market
+          a(href="#").market__link
+            img(src=require('./images/kucoin.png')).market__logo
+            h4.market__title KuCoin
+            p.market__description Exchange market
   // end section-markets
 
   section.section.section-roadmap#roadmap
@@ -195,7 +197,7 @@ block main
               img(src=require('./images/bitcointalk.svg'))
             span.social__title Bitcointalk
         li.social__el
-          a(href="#").social__link
+          a(href="https://boolberry.slack.com/").social__link
             div.social__icon
               img(src=require('./images/slack.png'))
             span.social__title Slack
@@ -205,12 +207,12 @@ block main
               img(src=require('./images/telegram.png'))
             span.social__title Telegram
         li.social__el
-          a(href="#").social__link
+          a(href="https://twitter.com/BoolberryBBR").social__link
             div.social__icon
               img(src=require('./images/twitter.png'))
             span.social__title Twitter
         li.social__el
-          a(href="#").social__link
+          a(href="https://www.reddit.com/r/boolberry/").social__link
             div.social__icon
               img(src=require('./images/reddit.png'))
             span.social__title Reddit
@@ -223,7 +225,7 @@ block main
       p.subscribe-text Receive updates about Boolberry project:
       form.subscribe
         div.subscribe__field
-          input.input(type="text" placeholder='Your e-mail')
+          input.input(type="email" placeholder='Your e-mail')
         div.subscribe__action
           button(type='submit') Subscribe
   // end section-join-us
@@ -236,22 +238,18 @@ block main
         div.contributor
           div.contributor__name @CryptoZoidberg
           div.contributor__icons
-            a(href="https://github.com/cryptozoidberg").contributor__link
+            a(href="#").contributor__link
               span.contributor__icon.icon-bitcointalk
-            a(href="#").contributor__link
+            a(href="https://github.com/cryptozoidberg").contributor__link
               span.contributor__icon.icon-github
-            a(href="#").contributor__link
-              span.contributor__icon.icon-reddit
     
         div.contributor
           div.contributor__name @Clintar
           div.contributor__icons
-            a(href="https://github.com/clintar").contributor__link
+            a(href="#").contributor__link
               span.contributor__icon.icon-bitcointalk
-            a(href="#").contributor__link
+            a(href="https://github.com/clintar").contributor__link
               span.contributor__icon.icon-github
-            a(href="#").contributor__link
-              span.contributor__icon.icon-reddit
 
         div.contributor
           div.contributor__name @John
@@ -260,15 +258,13 @@ block main
               span.contributor__icon.icon-bitcointalk
             a(href="#").contributor__link
               span.contributor__icon.icon-github
-            a(href="#").contributor__link
-              span.contributor__icon.icon-reddit
 
         div.contributor
           div.contributor__name @Ravaga
           div.contributor__icons
             a(href="#").contributor__link
               span.contributor__icon.icon-bitcointalk
-            a(href="#").contributor__link
+            a(href="https://github.com/Pravaga").contributor__link
               span.contributor__icon.icon-github
             a(href="#").contributor__link
               span.contributor__icon.icon-reddit
@@ -278,10 +274,6 @@ block main
           div.contributor__icons
             a(href="#").contributor__link
               span.contributor__icon.icon-bitcointalk
-            a(href="#").contributor__link
-              span.contributor__icon.icon-github
-            a(href="#").contributor__link
-              span.contributor__icon.icon-reddit
   // end section-contibutors
 
   footer.footer
@@ -308,13 +300,13 @@ block main
           li.list__el
             a(href="https://bitcointalk.org/index.php?topic=577267").list__link Bitcointalk
           li.list__el
-            a(href="#").list__link Slack
+            a(href="https://boolberry.slack.com/").list__link Slack
           li.list__el
             a(href="https://t.me/boolberry_bbr").list__link Telegram
           li.list__el
-            a(href="#").list__link Twitter
+            a(href="https://twitter.com/BoolberryBBR").list__link Twitter
           li.list__el
-            a(href="#").list__link Reddit
+            a(href="https://www.reddit.com/r/boolberry/").list__link Reddit
           li.list__el
             a(href="mailto:info@boolberry.com").list__link.underline info@boolberry.com
 
