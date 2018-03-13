@@ -5,20 +5,30 @@ import 'ress';
 import './images/logo.svg';
 import './images/bg_tooltip.svg';
 
+const topOffset = window.pageYOffset;
+const isMobile = (window.innerWidth < 1000) ? true : false;
+const headerOffset = isMobile ? 0 : 790;
+
 $( document ).ready(function() {
+  const header = document.getElementById('header');
   const nav = document.getElementById('navigation');
   const nav2 = document.getElementById('navigation-two');
-  const navClass = 'navigation';
+  const headerClass = 'header';
+  const hamburger = document.getElementById('hamburger');
 
   const onScroll = () => {
-    const topOffset = window.pageYOffset;
-    if (topOffset >= 830) {
-      nav.className = `${navClass} is-fixed`;
+    if (topOffset >= headerOffset) {
+      header.className = `${headerClass} is-fixed`;
     } else {
-      nav.className = navClass;
+      header.className = headerClass;
     };
   }
-  window.addEventListener('scroll', onScroll);
+
+  // show menu on hamburger click
+  $(hamburger).on('click', function() {
+    $(this).toggleClass('menu-opened');
+    $(nav).toggleClass('is-visible');
+  });
 
   // animation on go to section
   $(nav).on("click","a", function (event) {
@@ -40,4 +50,7 @@ $( document ).ready(function() {
 
     $('body,html').animate({scrollTop: top - margin}, 1000);
   });
+
+  // add listeners
+  window.addEventListener('scroll', onScroll);  
 });

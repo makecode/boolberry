@@ -2,33 +2,14 @@ extends ../base
 block title
   |boolberry
 block main
-  header.header
+  header.header#header
     div.header__wrap.container
-      div.header__logo
-        div.logo
+      div.header__left
+        div.logo.logo_small
           a(href="http://boolberry.com/" target='_self').logo__link
             img.logo__image(src='./images/logo.svg')
-      h1.header__title Pioneering Private Digital Transactions Since 2014
-      p.header__description Cryptocurrency is about the decentralization of the financial sector, removing people’s dependence on third party institutions.
-      p.header__description Boolberry is the natural next step in this journey, giving us all the power to make truly anonymous financial transactions.
-      ul.btn-group
-        // li.btn-group__el
-        //  a.btn(href="#")
-        //    span.icon.icon-play
-        //    span Video
-        li.btn-group__el
-          a.btn(href="https://github.com/cryptozoidberg/boolberry/releases/") Wallet
-        li.btn-group__el
-          a.btn(href="https://github.com/cryptozoidberg/boolberry") Github
-    // end header__wrap
-
-    nav.navigation#navigation
-      div.navigation__wrap.container
-        div.navigation__left
-          div.logo.logo_small
-            a(href="http://boolberry.com/" target='_self').logo__link
-              img.logo__image(src='./images/logo.svg')
-        div.navigation__right
+      div.header__right
+        nav.navigation#navigation
           ul.navigation__list
             li.navigation__el
               a.navigation__el(href='#what-is' target='_self') What is Boolberry?
@@ -42,8 +23,30 @@ block main
               a.navigation__el(href='#join-us' target='_self') Join Us
             li.navigation__el
               a.navigation__el(href='#contributors' target='_self') Contributors
-    // end navigation
+        // end navigation    
+        span.hamburger#hamburger
   // end header
+
+  section.hero#hero
+    .hero__wrap.container
+      div.hero__logo
+        div.logo
+          a(href="http://boolberry.com/" target='_self').logo__link
+            img.logo__image(src='./images/logo.svg')
+      h1.hero__title Pioneering Private Digital Transactions Since 2014
+      p.hero__description Cryptocurrency is about the decentralization of the financial sector, removing people’s dependence on third party institutions.
+      p.hero__description Boolberry is the natural next step in this journey, giving us all the power to make truly anonymous financial transactions.
+      ul.btn-group
+        // li.btn-group__el
+        //  a.btn(href="#")
+        //    span.icon.icon-play
+        //    span Video
+        li.btn-group__el
+          a.btn(href="https://github.com/cryptozoidberg/boolberry/releases/") Wallet
+        li.btn-group__el
+          a.btn(href="https://github.com/cryptozoidberg/boolberry") Github
+    // end hero__wrap
+  // end hero
 
   section.section.section-what-is#what-is
     div.section__wrap.container

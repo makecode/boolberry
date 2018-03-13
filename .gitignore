@@ -1,5 +1,6 @@
 #directories
 .idea
+.vs
 node_modules
 
 #npm

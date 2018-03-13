@@ -1,21 +1,5 @@
 .navigation
-  position: absolute
-  left: 0
-  bottom: 0
-  width: 100%
-  display: flex
-  align-items: center
-  height: 70px
-  background-size: cover
-  background-position: center bottom
   transition: $transition
-
-  &__wrap
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    align-items: center
-    justify-content: space-between
 
   &__list
     display: flex
@@ -28,17 +12,24 @@
     &:first-child
       margin-left: 0
 
-  &.is-fixed
+  +m(1000)
     position: fixed
-    top: 0
     left: 0
-    bottom: auto
-    background-image: url('images/bg.jpg')  
-    z-index: 10
+    top: 0
+    bottom: 0
+    width: 220px
+    background-color: $bgBlue
+    transform: translateX(-100%)
 
-.btn-group
-  display: inline-flex
-  flex-direction: row
+    .navigation__list
+      padding: 90px 20px 5px
+      flex-direction: column
 
-  &__el
-    margin: 0 6px
+    .navigation__el
+      margin-bottom: 10px
+      margin-left: 0
+      font-size: 18px
+      font-weight: normal
+
+    &.is-visible
+      transform: translateX(0);

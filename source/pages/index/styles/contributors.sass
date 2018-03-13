@@ -5,9 +5,20 @@
   justify-content: center
   margin-top: 20px
 
+  +m(1000)
+    flex-direction: column
+    flex-wrap: wrap
+
 .contributor
   margin: 0 30px
   display: inline-block
+
+  +m(1000)
+    width: 100%
+    margin: 0 0 30px
+
+    &:last-child
+      margin-bottom: 0
 
   &__name
     margin-bottom: 10px

@@ -9,14 +9,35 @@
     </title>
   <link href="./css/index.css" rel="stylesheet"></head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__wrap container">
-        <div class="header__logo">
+        <div class="header__left">
+          <div class="logo logo_small"><a class="logo__link" href="http://boolberry.com/" target="_self"><img class="logo__image" src="./images/logo.svg"></a></div>
+        </div>
+        <div class="header__right">
+          <nav class="navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__el"><a class="navigation__el" href="#what-is" target="_self">What is Boolberry?</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#papers" target="_self">Papers</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#markets" target="_self">Markets</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#roadmap" target="_self">Roadmap</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#join-us" target="_self">Join Us</a></li>
+              <li class="navigation__el"><a class="navigation__el" href="#contributors" target="_self">Contributors</a></li>
+            </ul>
+          </nav>
+          <!-- end navigation    --><span class="hamburger" id="hamburger"></span>
+        </div>
+      </div>
+    </header>
+    <!-- end header-->
+    <section class="hero" id="hero">
+      <div class="hero__wrap container">
+        <div class="hero__logo">
           <div class="logo"><a class="logo__link" href="http://boolberry.com/" target="_self"><img class="logo__image" src="./images/logo.svg"></a></div>
         </div>
-        <h1 class="header__title">Pioneering Private Digital Transactions Since 2014</h1>
-        <p class="header__description">Cryptocurrency is about the decentralization of the financial sector, removing people’s dependence on third party institutions.</p>
-        <p class="header__description">Boolberry is the natural next step in this journey, giving us all the power to make truly anonymous financial transactions.</p>
+        <h1 class="hero__title">Pioneering Private Digital Transactions Since 2014</h1>
+        <p class="hero__description">Cryptocurrency is about the decentralization of the financial sector, removing people’s dependence on third party institutions.</p>
+        <p class="hero__description">Boolberry is the natural next step in this journey, giving us all the power to make truly anonymous financial transactions.</p>
         <ul class="btn-group">
           <!-- li.btn-group__el-->
           <!--  a.btn(href="#")-->
@@ -26,27 +47,9 @@
           <li class="btn-group__el"><a class="btn" href="https://github.com/cryptozoidberg/boolberry">Github</a></li>
         </ul>
       </div>
-      <!-- end header__wrap-->
-      <nav class="navigation" id="navigation">
-        <div class="navigation__wrap container">
-          <div class="navigation__left">
-            <div class="logo logo_small"><a class="logo__link" href="http://boolberry.com/" target="_self"><img class="logo__image" src="./images/logo.svg"></a></div>
-          </div>
-          <div class="navigation__right">
-            <ul class="navigation__list">
-              <li class="navigation__el"><a class="navigation__el" href="#what-is" target="_self">What is Boolberry?</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#papers" target="_self">Papers</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#markets" target="_self">Markets</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#roadmap" target="_self">Roadmap</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#join-us" target="_self">Join Us</a></li>
-              <li class="navigation__el"><a class="navigation__el" href="#contributors" target="_self">Contributors</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- end navigation-->
-    </header>
-    <!-- end header-->
+      <!-- end hero__wrap-->
+    </section>
+    <!-- end hero-->
     <section class="section section-what-is" id="what-is">
       <div class="section__wrap container">
         <h2 class="section__title">What is Boolberry</h2>

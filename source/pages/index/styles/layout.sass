@@ -4,18 +4,73 @@
   min-width: 1120px
   margin: 0 auto
   box-sizing: border-box
-  
-.header,
+
+  +m(1140)
+    width: 980px
+    min-width: 980px
+
+  +m(1000)
+    width: 100%
+    min-width: 100%
+
+.header
+  position: absolute
+  left: 0
+  top: 790px
+  width: 100%
+  display: flex
+  align-items: center
+  height: 70px
+  background-size: cover
+  background-position: center bottom
+  z-index: 10
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: space-between
+
+  &.is-fixed
+    position: fixed
+    top: 0
+    left: 0
+    bottom: auto
+    background-image: url('images/bg.jpg')  
+    z-index: 10
+
+  .logo
+    position: relative
+    z-index: 11
+
+  .hamburger
+    display: none
+
+    +m(1000)
+      display: inline-block
+
+  +m(1000)
+    top: 0
+
+.hero,
 .footer
   background-image: url('images/bg.jpg')
   background-size: cover
   background-position: center bottom
   color: $textLight
 
-.header
+.hero
   position: relative
-  padding: 140px 0 334px
+  height: 860px
+  display: flex
+  align-items: center
+  // padding: 140px 0 334px
   text-align: center
+
+  &__wrap
+    position: relative
+    top: -70px
 
   &__logo
     margin-bottom: 94px
@@ -67,8 +122,14 @@
     flex-direction: row
     position: relative
 
+    +m(1000)
+      flex-wrap: wrap
+
   &__col
     margin-right: 96px
+
+    +m(1000)
+      margin-bottom: 30px
 
     &:last-child
       margin-right: 0
@@ -81,3 +142,9 @@
     position: absolute
     right: 0
     bottom: 0
+
+    +m(1000)
+      position: relative
+      margin-top: 30px
+      width: 100%
+      text-align: center

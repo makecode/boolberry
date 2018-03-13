@@ -23,3 +23,16 @@
     margin-right: 8px
     font-size: 14px
     top: 1px
+
+.btn-group
+  display: inline-flex
+  flex-direction: row
+
+  +m(1000)
+    flex-direction: column
+
+  &__el
+    margin: 0 6px
+
+    +m(1000)
+      margin: 10px 0

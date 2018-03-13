@@ -4,6 +4,14 @@
   display: flex
   justify-content: space-between
 
+  +m(1000)
+    margin: 80px 0 0
+    width: 100%
+    height: auto
+    flex-direction: column
+    justify-content: space-between
+    overflow: hidden
+
 .point
   position: relative
   width: 16.6%
@@ -36,6 +44,9 @@
     transform: translateX(-50%)
     line-height: 1
 
+    +m(1000)
+      position: relative
+
   &__title
     white-space: nowrap
 
@@ -62,20 +73,78 @@
           right: calc(-100% + 38px)
           border-bottom: 3px solid $pointBorderColor
 
+    +m(1000)
+      .point__circle
+        &::before,
+        &::after
+          height: 100vh
+          left: 50%
+
+        &::before
+          top: auto
+          bottom: -4px
+          transform: translate(-2px, 100%)
+          border-bottom: none
+          border-left: 4px dotted #fff
+
+        &::after
+          top: 0
+          transform: translate(-2px, -100%)
+          border-bottom: none
+          border-left: 3px solid $pointBorderColor
+
   &.top
     .point
       &__title
         bottom: -32px
 
+        +m(1000)
+          bottom: auto
+          top: 0
+          left: 100%
+          transform: translate(0, -100%)
+
       &__tooltip
         transform: translate(-50%, -100%)
         top: -24px
+
+        +m(1000)
+          top: 0
+          left: 100%
+          transform: none
+          margin-bottom: 50px
+
+          .tooltip
+            box-shadow: 8px 8px 0 0px rgba(0, 0, 0, 0.1)
+
+            &::after,
+            &::before
+              display: none
 
   &.bottom
     .point
       &__title
         top: -32px
 
+        +m(1000)
+          bottom: auto
+          top: 0
+          left: 100%
+          transform: translate(0, -100%)
+
       &__tooltip
         transform: translate(-50%, 100%)
         bottom: -24px
+
+        +m(1000)
+          top: 0
+          left: 100%
+          transform: none
+          margin-bottom: 50px
+
+          .tooltip
+            box-shadow: 8px 8px 0 0px rgba(0, 0, 0, 0.1)
+
+            &::after,
+            &::before
+              display: none

@@ -2,16 +2,27 @@
   font-size: 13px
   
 .subscribe
+  width: 100%
+  max-width: 500px
   margin-top: 10px
   display: inline-flex
   flex-direction: row
   flex-wrap: nowrap
 
+  +m(480)
+    flex-direction: column
+
+  &__field
+    width: 100%
+
+    +m(480)
+      margin-bottom: 10px
+
   input
     padding: 0 14px
-    width: 360px
+    width: 100%
     height: 46px
-    box-sizing: content-box
+    box-sizing: border-box
     background-color: $inputBg
 
   button

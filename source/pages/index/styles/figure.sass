@@ -2,9 +2,21 @@
   display: flex
   justify-content: space-between
 
+  +m(1000)
+    flex-direction: column
+    align-items: center
+
 .figure
   display: inline-block
   width: 32%
+
+  +m(1000)
+    width: 100%
+    max-width: 500px
+    margin-bottom: 30px
+
+    &:last-child
+      margin-bottom: 0
 
   &__icon
     display: inline-block
