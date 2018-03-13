@@ -5,6 +5,12 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <base target="_blank">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-115499552-1');
+</script>
     <title>boolberry
     </title>
   <link href="./css/index.css" rel="stylesheet"></head>
@@ -53,14 +59,14 @@
     <section class="section section-what-is" id="what-is">
       <div class="section__wrap container">
         <h2 class="section__title">What is Boolberry</h2>
-        <p class="section__description">BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to insure anonymity, transactions cannot be linked to a single sender.</p>
+        <p class="section__description">BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to ensure anonymity, transactions cannot be linked to a single sender.</p>
         <div class="figure-group">
           <figure class="figure">
             <div class="figure__icon"><img class="figure__img" src="images/fig_blockchain.svg"></div>
             <figcaption class="figure__text">
               <dl>
                 <dt class="figure__strong">Solving blockchain bloat</dt>
-                <dd class="figure__regular">It’s no longer necessary to drag anound hundreds of thousands of ring signatures to mantain security. Boolberry's unique pruning mechanism trims old ring signatures that are covered by checkpoints. This results in up to a 90% reduction of block chain size to insure fast and efficient synchronization.</dd>
+                <dd class="figure__regular">It’s no longer necessary to drag around hundreds of thousands of ring signatures to mantain security. Boolberry's unique pruning mechanism trims old ring signatures that are covered by checkpoints. This results in up to a 90% reduction of block chain size to ensure fast and efficient synchronization.</dd>
               </dl>
             </figcaption>
           </figure>
@@ -69,7 +75,7 @@
             <figcaption class="figure__text">
               <dl>
                 <dt class="figure__strong">Defending against ASICs</dt>
-                <dd class="figure__regular">Boolberry employs a proprietary algoritm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly decentralized and safe from a 51% attack.</dd>
+                <dd class="figure__regular">Boolberry employs a proprietary algorithm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly decentralized and safe from a 51% attack.</dd>
               </dl>
             </figcaption>
           </figure>
@@ -78,7 +84,7 @@
             <figcaption class="figure__text">
               <dl>
                 <dt class="figure__strong">Creating a user friendly experience</dt>
-                <dd class="figure__regular">Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency.  It's unique alias system gives users the option to replace long wallet addresses with a simple alias, such as @yourename.</dd>
+                <dd class="figure__regular">Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency.  It's unique alias system gives users the option to replace long wallet addresses with a simple alias, such as @yourname.</dd>
               </dl>
             </figcaption>
           </figure>
@@ -221,9 +227,12 @@
               <div class="social__icon"><img src="images/reddit.png"></div><span class="social__title">Reddit</span></a></li>
         </ul>
         <p class="subscribe-text">Receive updates about Boolberry project:</p>
-        <form class="subscribe">
+        <form class="subscribe" action="https://boolberry.us12.list-manage.com/subscribe/post" method="POST">
+          <input type="hidden" name="u" value="74f938751d6d77cf1ff4848a1">
+          <input type="hidden" name="id" value="35f90fd02d">
+          <input type="hidden" name="orig-lang" value="1">
           <div class="subscribe__field">
-            <input class="input" type="email" placeholder="Your e-mail">
+            <input class="input" type="email" placeholder="Your e-mail" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0">
           </div>
           <div class="subscribe__action">
             <button type="submit">Subscribe</button>
@@ -307,7 +316,7 @@
           </ul>
         </div>
         <div class="footer__col">
-          <h3 class="footer__title">Recources</h3>
+          <h3 class="footer__title">Resources</h3>
           <ul class="list">
             <li class="list__el"><a class="list__link" href="/state.html">Network</a></li>
             <li class="list__el"><a class="list__link" href="https://explorer.mining.blue/en/">Block explorer</a></li>

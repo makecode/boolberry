@@ -51,7 +51,7 @@ block main
   section.section.section-what-is#what-is
     div.section__wrap.container
       h2.section__title What is Boolberry
-      p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to insure anonymity, transactions cannot be linked to a single sender.
+      p.section__description BBR is a fully secure and anonymous cryptocurrency. Built from the ground up to ensure anonymity, transactions cannot be linked to a single sender.
       div.figure-group
         figure.figure
           div.figure__icon
@@ -59,7 +59,7 @@ block main
           figcaption.figure__text
             dl
               dt.figure__strong Solving blockchain bloat
-              dd.figure__regular It’s no longer necessary to drag anound hundreds of thousands of ring signatures to mantain security. Boolberry's unique pruning mechanism trims old ring signatures that are covered by checkpoints. This results in up to a 90% reduction of block chain size to insure fast and efficient synchronization.
+              dd.figure__regular It’s no longer necessary to drag around hundreds of thousands of ring signatures to mantain security. Boolberry's unique pruning mechanism trims old ring signatures that are covered by checkpoints. This results in up to a 90% reduction of block chain size to ensure fast and efficient synchronization.
         
         figure.figure
           div.figure__icon
@@ -67,7 +67,7 @@ block main
           figcaption.figure__text
             dl
               dt.figure__strong Defending against ASICs
-              dd.figure__regular Boolberry employs a proprietary algoritm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly decentralized and safe from a 51% attack.
+              dd.figure__regular Boolberry employs a proprietary algorithm designed specifially to keep real miners in the game. By combating large hardware mining operations, Boolberry remains truly decentralized and safe from a 51% attack.
         
         figure.figure
           div.figure__icon
@@ -75,7 +75,7 @@ block main
           figcaption.figure__text
             dl
               dt.figure__strong Creating a user friendly experience
-              dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency.  It's unique alias system gives users the option to replace long wallet addresses with a simple alias, such as @yourename.
+              dd.figure__regular Boolberry wallet app will finally bring an easy-to-use experience to Cryptocurrency.  It's unique alias system gives users the option to replace long wallet addresses with a simple alias, such as @yourname.
   // end section-what-is
 
   section.section.section-papers#papers
@@ -226,9 +226,12 @@ block main
         //-     span.social__title Youtube
 
       p.subscribe-text Receive updates about Boolberry project:
-      form.subscribe
+      form.subscribe(action='https://boolberry.us12.list-manage.com/subscribe/post' method='POST')
+        input(type="hidden" name="u" value="74f938751d6d77cf1ff4848a1")
+        input(type="hidden" name="id" value="35f90fd02d")
+        input(type="hidden" name="orig-lang" value="1")
         div.subscribe__field
-          input.input(type="email" placeholder='Your e-mail')
+          input.input(type="email" placeholder='Your e-mail' autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0")
         div.subscribe__action
           button(type='submit') Subscribe
   // end section-join-us
@@ -330,7 +333,7 @@ block main
             a(href="mailto:info@boolberry.com").list__link.underline info@boolberry.com
 
       div.footer__col
-        h3.footer__title Recources
+        h3.footer__title Resources
         ul.list
           li.list__el
             a(href="/state.html").list__link Network
