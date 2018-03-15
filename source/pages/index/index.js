@@ -5,18 +5,20 @@ import 'ress';
 import './images/logo.svg';
 import './images/bg_tooltip.svg';
 
-const topOffset = window.pageYOffset;
-const isMobile = (window.innerWidth < 1000) ? true : false;
-const headerOffset = isMobile ? 0 : 790;
-
 $( document ).ready(function() {
+  const isMobile = (window.innerWidth < 1000) ? true : false;
+  const headerOffset = isMobile ? 0 : 790;
+
   const header = document.getElementById('header');
   const nav = document.getElementById('navigation');
   const nav2 = document.getElementById('navigation-two');
   const headerClass = 'header';
   const hamburger = document.getElementById('hamburger');
-
+  
+  // on sroll callback
   const onScroll = () => {
+    const topOffset = window.pageYOffset;
+    
     if (topOffset >= headerOffset) {
       header.className = `${headerClass} is-fixed`;
     } else {
