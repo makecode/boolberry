@@ -3,12 +3,13 @@
 .btn:focus,
 .btn:visited
   display: inline-block
-  width: 210px
+  width: 180px
   height: 46px
   line-height: 42px
   box-sizing: border-box
   border: 1px solid #ffffff
   transition: $transition
+  background-color: transparent
 
   &:hover
     border-color: $buttonHover
@@ -23,6 +24,22 @@
     margin-right: 8px
     font-size: 14px
     top: 1px
+
+  &.wide
+    width: 210px
+
+  &.fill,
+  &.fill:active,
+  &.fill:focus,
+  &.fill:visited
+    color: $textDefault
+    background-color: $buttonHover
+    border-color: $buttonHover
+
+  &.fill:hover
+    color: $link
+    background-color: transparent
+    border-color: $link
 
 .btn-group
   display: inline-flex
