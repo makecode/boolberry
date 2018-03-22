@@ -1,5 +1,5 @@
-import './index.sass';
 import 'ress';
+import './index.sass';
 
 // import images
 import './images/logo.svg';
