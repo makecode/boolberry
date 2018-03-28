@@ -12,6 +12,18 @@
     &:first-child
       margin-left: 0
 
+  &__link
+    position: relative
+
+    &.with-label
+      &::after
+        position: absolute
+        content: attr(data-label)
+        top: 0
+        right: -2px
+        font-size: 10px
+        transform: translateX(100%)
+
   +m(1000)
     position: fixed
     left: 0

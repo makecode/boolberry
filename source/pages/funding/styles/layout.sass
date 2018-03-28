@@ -1,3 +1,6 @@
+body
+  padding-top: 70px
+
 .container
   padding: 20px
   width: 1120px
@@ -14,15 +17,16 @@
     min-width: 100%
 
 .header
-  position: absolute
+  position: fixed
   left: 0
-  top: 790px
+  top: 0
   width: 100%
   display: flex
   align-items: center
   height: 70px
   background-size: cover
   background-position: center bottom
+  background-image: url('../../media/bg.jpg')    
   z-index: 10
 
   &__wrap
@@ -37,7 +41,6 @@
     top: 0
     left: 0
     bottom: auto
-    background-image: url('../../media/bg.jpg')  
     z-index: 10
 
   .logo
@@ -53,47 +56,16 @@
   +m(1000)
     top: 0
 
-.hero,
 .footer
   background-image: url('../../media/bg.jpg')
   background-size: cover
   background-position: center bottom
   color: $textLight
 
-.hero
-  position: relative
-  height: 860px
-  display: flex
-  align-items: center
-  // padding: 140px 0 334px
-  text-align: center
-
-  &__wrap
-    position: relative
-    top: -70px
-
-    +m(1000)
-      top: auto
-
-  &__logo
-    margin-bottom: 94px
-
-    +m(1000)
-      display: none
-
-  &__title
-    margin: 30px 0
-
-  &__description
-    font-weight: regular
-
-  .btn-group
-    margin-top: 50px
-
 .section
   padding: 90px 0 100px
   background-repeat: repeat
-  text-align: center
+  text-align: left
 
   &__wrap
     overflow: hidden
@@ -101,22 +73,25 @@
   &__title
     font-size: 44px
 
-  &.section-papers,
-  &.section-contributors
-    background-image: url('../../media/bg_b.png')
-    color: $textLight
+  .list
 
-  &.section-roadmap
-    background-image: url('../../media/bg_board.png')
-    color: $textLight
+    &__el
+      margin-bottom: 50px
 
-  &.section-what-is
-    .section__description
-      margin: 16px 0
+      &:last-child
+        margin-bottom: 0
 
-  &.section-papers
-    .section__description
-      margin: 18px 0 32px
+    &__title
+      display: flex
+      flex-direction: row
+      align-items: center
+      margin-bottom: 14px
+
+    &__title-text
+      font-size: 22px
+
+    &__title-btn
+      margin-left: 20px
 
 .footer
   display: flex

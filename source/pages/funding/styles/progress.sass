@@ -1,0 +1,32 @@
+.progress
+  position: relative
+  width: 300px
+  height: 34px
+  background-color: #e7f5e8
+
+  &__bar
+    position: absolute
+    content: ''
+    left: 0
+    top: 0
+    height: 100%
+    background-color: #bee3bf
+    z-index: 1
+
+  &__title
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    padding: 0 10px
+    z-index: 2
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+    text-align: center
+
+  &.blue
+    background-color: #e3f2fd
+
+    .progress__bar
+      background-color: #bbdefb

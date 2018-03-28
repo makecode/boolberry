@@ -2,8 +2,8 @@ import 'ress';
 import './index.sass';
 
 // import images
-import './images/logo.svg';
-import './images/bg_tooltip.svg';
+// import './images/logo.svg';
+// import './images/bg_tooltip.svg';
 
 $( document ).ready(function() {
   const isMobile = (window.innerWidth < 1000) ? true : false;

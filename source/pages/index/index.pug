@@ -7,22 +7,24 @@ block main
       div.header__left
         div.logo.logo_small
           a(href="http://boolberry.com/" target='_self').logo__link
-            img.logo__image(src='./images/logo.svg')
+            img.logo__image(src=require('./../../media/logo.svg'))
       div.header__right
         nav.navigation#navigation
           ul.navigation__list
             li.navigation__el
-              a.navigation__el(href='#what-is' target='_self') What is Boolberry?
+              a.navigation__link(href='#what-is' target='_self') What is Boolberry?
             li.navigation__el
-              a.navigation__el(href='#papers' target='_self') Papers
+              a.navigation__link(href='#papers' target='_self') Papers
             li.navigation__el
-              a.navigation__el(href='#markets' target='_self') Markets
+              a.navigation__link(href='#markets' target='_self') Markets
             li.navigation__el
-              a.navigation__el(href='#roadmap' target='_self') Roadmap
+              a.navigation__link(href='#roadmap' target='_self') Roadmap
             li.navigation__el
-              a.navigation__el(href='#join-us' target='_self') Join Us
+              a.navigation__link(href='#join-us' target='_self') Join Us
             li.navigation__el
-              a.navigation__el(href='#contributors' target='_self') Contributors
+              a.navigation__link(href='#contributors' target='_self') Contributors
+            li.navigation__el
+              a.navigation__link.with-label(href='https://funding.boolberry.com/' target='_blank' data-label='Beta') Funding System
         // end navigation    
         span.hamburger#hamburger
   // end header
@@ -32,7 +34,7 @@ block main
       div.hero__logo
         div.logo
           a(href="http://boolberry.com/" target='_self').logo__link
-            img.logo__image(src='./images/logo.svg')
+            img.logo__image(src=require('./../../media/logo.svg'))
       h1.hero__title Pioneering Private Digital Transactions Since 2014
       p.hero__description Cryptocurrency is about the decentralization of the financial sector, removing people’s dependence on third party institutions.
       p.hero__description Boolberry is the natural next step in this journey, giving us all the power to make truly anonymous financial transactions.
@@ -55,7 +57,7 @@ block main
       div.figure-group
         figure.figure
           div.figure__icon
-            img(src=require('./images/fig_blockchain.svg')).figure__img
+            img(src=require('./../../media/fig_blockchain.svg')).figure__img
           figcaption.figure__text
             dl
               dt.figure__strong Solving blockchain bloat
@@ -63,7 +65,7 @@ block main
         
         figure.figure
           div.figure__icon
-            img(src=require('./images/fig_defending.svg')).figure__img
+            img(src=require('./../../media/fig_defending.svg')).figure__img
           figcaption.figure__text
             dl
               dt.figure__strong Defending against ASICs
@@ -71,7 +73,7 @@ block main
         
         figure.figure
           div.figure__icon
-            img(src=require('./images/fig_wallet.svg')).figure__img
+            img(src=require('./../../media/fig_wallet.svg')).figure__img
           figcaption.figure__text
             dl
               dt.figure__strong Creating a user friendly experience
@@ -98,12 +100,12 @@ block main
       div.markets
         div.market
           a(href="https://btc-alpha.com/exchange/BBR_BTC/").market__link
-            img(src=require('./images/btc.png')).market__logo
+            img(src=require('./../../media/btc.png')).market__logo
             h4.market__title BTC-Alpha
             p.market__description Exchange market
         // div.market
           // a(href="#").market__link
-            // img(src=require('./images/kucoin.png')).market__logo
+            // img(src=require('./../../media/kucoin.png')).market__logo
             // h4.market__title KuCoin
             // p.market__description Exchange market
   // end section-markets
@@ -197,32 +199,32 @@ block main
         li.social__el
           a(href="https://bitcointalk.org/index.php?topic=577267").social__link
             div.social__icon
-              img(src=require('./images/bitcointalk.svg'))
+              img(src=require('./../../media/bitcointalk.svg'))
             span.social__title Bitcointalk
         li.social__el
           a(href="https://boolberry.slack.com/").social__link
             div.social__icon
-              img(src=require('./images/slack.png'))
+              img(src=require('./../../media/slack.png'))
             span.social__title Slack
         li.social__el
           a(href="https://t.me/boolberry_bbr").social__link
             div.social__icon
-              img(src=require('./images/telegram.png'))
+              img(src=require('./../../media/telegram.png'))
             span.social__title Telegram
         li.social__el
           a(href="https://twitter.com/BoolberryBBR").social__link
             div.social__icon
-              img(src=require('./images/twitter.png'))
+              img(src=require('./../../media/twitter.png'))
             span.social__title Twitter
         li.social__el
           a(href="https://www.reddit.com/r/boolberry/").social__link
             div.social__icon
-              img(src=require('./images/reddit.png'))
+              img(src=require('./../../media/reddit.png'))
             span.social__title Reddit
         //- li.social__el
         //-   a(href="#").social__link
         //-     div.social__icon
-        //-       img(src=require('./images/youtube.png'))
+        //-       img(src=require('./../../media/youtube.png'))
         //-     span.social__title Youtube
 
       p.subscribe-text Receive updates about Boolberry project:
