@@ -16,7 +16,7 @@
 .header
   position: absolute
   left: 0
-  top: 790px
+  top: calc(100vh - 70px)
   width: 100%
   display: flex
   align-items: center
@@ -62,11 +62,14 @@
 
 .hero
   position: relative
-  height: 860px
+  min-height: 100vh
   display: flex
   align-items: center
   // padding: 140px 0 334px
   text-align: center
+
+  +m(1000)
+    padding-top: 60px
 
   &__wrap
     position: relative

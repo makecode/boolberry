@@ -1,0 +1,83 @@
+extends ../base
+block title
+  |boolberry funding
+block main
+  div#app
+    header.header#header
+      div.header__wrap.container
+        div.header__left
+          div.logo.logo_small
+            a(href="http://boolberry.com/" target='_self').logo__link
+              img.logo__image(src='./images/logo.svg')
+        div.header__right
+          nav.navigation#navigation
+            ul.navigation__list
+              li.navigation__el
+                a.navigation__link(href='#progress' target='_self') In Progress                          
+              li.navigation__el
+                a.navigation__link(href='#funding' target='_self') In Funding 
+              li.navigation__el
+                a.navigation__link(href='#proposals' target='_self') Proposals
+              li.navigation__el
+                a.navigation__link(href='http://boolberry.com/' target='_blank') Main Website
+          // end navigation    
+          span.hamburger#hamburger
+    // end header
+    
+    section.section
+      
+        
+    // end section
+
+    footer.footer
+      div.footer__wrap.container
+        div.footer__col
+          h3.footer__title Boolberry
+          ul.list#navigation-two
+            li.list__el
+              a(href="#what-is" target='_self').list__link In Progress                           
+            li.list__el
+              a(href="#papers" target='_self').list__link In Funding
+            li.list__el
+              a(href="#markets" target='_self').list__link Proposals
+            li.list__el
+              a(href="http://boolberry.com/" target='_blank').list__link Main Website
+
+        div.footer__col
+          h3.footer__title Contacts
+          ul.list.list_contacts
+            li.list__el
+              a(href="https://bitcointalk.org/index.php?topic=577267").list__link
+                span.list__icon.icon-bitcointalk            
+                span.list__text Bitcointalk
+            li.list__el
+              a(href="https://boolberry.slack.com/").list__link
+                span.list__icon.icon-slack
+                span.list__text Slack
+            li.list__el
+              a(href="https://t.me/boolberry").list__link
+                span.list__icon.icon-telegram
+                span.list__text Telegram
+            li.list__el
+              a(href="https://twitter.com/BoolberryBBR").list__link
+                span.list__icon.icon-twitter
+                span.list__text Twitter
+            li.list__el
+              a(href="https://www.reddit.com/r/boolberry/").list__link
+                span.list__icon.icon-reddit
+                span.list__text Reddit
+
+        div.footer__col
+          h3.footer__title Resources
+          ul.list
+            li.list__el
+              a(href="/state.html").list__link Network
+            li.list__el
+              a(href="https://explorer.mining.blue/en/").list__link Block explorer
+            li.list__el
+              a(href="https://github.com/cryptozoidberg/boolberry").list__link Github
+            li.list__el
+              a(href="https://github.com/cryptozoidberg/boolberry/releases/").list__link Github/Releases
+
+        div.copyright © 2018 Boolberry.com
+    // end footer

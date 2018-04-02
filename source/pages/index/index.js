@@ -7,13 +7,15 @@ import './index.sass';
 
 $( document ).ready(function() {
   const isMobile = (window.innerWidth < 1000) ? true : false;
-  const headerOffset = isMobile ? 0 : 790;
 
   const header = document.getElementById('header');
+  const hero = document.getElementById('hero');
   const nav = document.getElementById('navigation');
   const nav2 = document.getElementById('navigation-two');
   const headerClass = 'header';
   const hamburger = document.getElementById('hamburger');
+ 
+  const headerOffset = isMobile ? 0 : hero.offsetHeight - 70;
   
   // on sroll callback
   const onScroll = () => {
